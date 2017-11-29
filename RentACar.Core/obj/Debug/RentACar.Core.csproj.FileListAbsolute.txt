@@ -1,0 +1,10 @@
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\RentACar.Core.dll.config
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\RentACar.Core.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\RentACar.Core.pdb
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\obj\Debug\RentACar.Core.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\obj\Debug\RentACar.Core.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Core\obj\Debug\RentACar.Core.pdb

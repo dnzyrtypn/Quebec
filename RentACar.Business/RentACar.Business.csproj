@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78B928BC-F290-4C2C-AA4F-7A1681407019}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RentACar.Business</RootNamespace>
+    <AssemblyName>RentACar.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IArabaModelService.cs" />
+    <Compile Include="Abstract\IArabaSegmentiService.cs" />
+    <Compile Include="Abstract\IArabaService.cs" />
+    <Compile Include="Abstract\IBagajTipiService.cs" />
+    <Compile Include="Abstract\IFaturaService.cs" />
+    <Compile Include="Abstract\IKiralamaBilgileriService.cs" />
+    <Compile Include="Abstract\IMarkaService.cs" />
+    <Compile Include="Abstract\IMusteriService.cs" />
+    <Compile Include="Abstract\IService.cs" />
+    <Compile Include="Abstract\IUcretlerService.cs" />
+    <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Abstract\IVitesService.cs" />
+    <Compile Include="Abstract\IYakıtTipiService.cs" />
+    <Compile Include="ManagementBase.cs" />
+    <Compile Include="Concrete\ArabaManagement.cs" />
+    <Compile Include="Concrete\ArabaModelManagement.cs" />
+    <Compile Include="Concrete\ArabaSegmentiManagement.cs" />
+    <Compile Include="Concrete\BagajTipiManagement.cs" />
+    <Compile Include="Concrete\FaturaManagement.cs" />
+    <Compile Include="Concrete\KiralamaBilgileriManagement.cs" />
+    <Compile Include="Concrete\MarkaManagement.cs" />
+    <Compile Include="Concrete\MusteriManagement.cs" />
+    <Compile Include="Concrete\UcretlerManagement.cs" />
+    <Compile Include="Concrete\UserManagement.cs" />
+    <Compile Include="Concrete\VitesManagement.cs" />
+    <Compile Include="Concrete\YakıtTipiManagement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RentACar.Core\RentACar.Core.csproj">
+      <Project>{3a2ef0fa-7952-47eb-b384-496a02275697}</Project>
+      <Name>RentACar.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentACar.DataAccess\RentACar.DataAccess.csproj">
+      <Project>{531b2271-8893-4b9b-90d3-1918abaa7f27}</Project>
+      <Name>RentACar.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentACar.Model\RentACar.Model.csproj">
+      <Project>{dfd8c609-1ea6-4c34-8088-538108f3e7d1}</Project>
+      <Name>RentACar.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

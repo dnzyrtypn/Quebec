@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="QuebecRentACar.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>QUEBEC Rent A Car</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="quabec, rent a car, istanbul" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet" />
+    <!-- /fonts -->
+    <!-- css -->
+    <link href="Template/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Template/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Template/css/jquery.mb.thumbgallery.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Template/css/info.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Template/css/banner.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Template/css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top" data-aos="flip-up">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Home.aspx">
+                            <h1>QUEBEC</h1>
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav slide-nav">
+                            <li class="active current"><a href="Home.aspx">Anasayfa</a></li>
+                            <li><a href="Araclar.aspx">Araçlarımız</a></li>
+                            <li><a href="DetaylıAra.aspx">Detaylı Arama</a></li>
+                            <%--<li><a href="Kiralama.aspx">Kirala</a></li>--%>
+                            <li><a href="About.aspx">Hakkımızda</a></li>
+                            <li><a href="Contact.aspx">Bize Ulaşın</a></li>
+                            <li><a href="Login.aspx">Giriş Yapın</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <section class="last-w3layouts">
+                <div class="container">
+                    <a href="Home.aspx" class="bottom-agile">
+                        <h2 class="text-center">QUEBEC</h2>
+                    </a>
+                    <p class="text-center">&copy; 2017 QUEBEC RENT A CAR. All Rights Reserved | Design by Deniz Yurtyapan</p>
+                </div>
+            </section>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.WebFormUI", "QuebecRentACar\RentACar.WebFormUI.csproj", "{6630A772-42EB-479E-928E-77839DB9CAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Core", "RentACar.Core\RentACar.Core.csproj", "{3A2EF0FA-7952-47EB-B384-496A02275697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Model", "RentACar.Model\RentACar.Model.csproj", "{DFD8C609-1EA6-4C34-8088-538108F3E7D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.DataAccess", "RentACar.DataAccess\RentACar.DataAccess.csproj", "{531B2271-8893-4B9B-90D3-1918ABAA7F27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Business", "RentACar.Business\RentACar.Business.csproj", "{78B928BC-F290-4C2C-AA4F-7A1681407019}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://quebecteam.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RentACar.Core\\RentACar.Core.csproj
+		SccProjectName1 = RentACar.Core
+		SccLocalPath1 = RentACar.Core
+		SccProjectUniqueName2 = QuebecRentACar\\RentACar.WebFormUI.csproj
+		SccProjectName2 = QuebecRentACar
+		SccLocalPath2 = QuebecRentACar
+		SccProjectUniqueName3 = RentACar.Model\\RentACar.Model.csproj
+		SccProjectName3 = RentACar.Model
+		SccLocalPath3 = RentACar.Model
+		SccProjectUniqueName4 = RentACar.DataAccess\\RentACar.DataAccess.csproj
+		SccProjectName4 = RentACar.DataAccess
+		SccLocalPath4 = RentACar.DataAccess
+		SccProjectUniqueName5 = RentACar.Business\\RentACar.Business.csproj
+		SccProjectName5 = RentACar.Business
+		SccLocalPath5 = RentACar.Business
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6630A772-42EB-479E-928E-77839DB9CAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6630A772-42EB-479E-928E-77839DB9CAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6630A772-42EB-479E-928E-77839DB9CAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6630A772-42EB-479E-928E-77839DB9CAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2EF0FA-7952-47EB-B384-496A02275697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2EF0FA-7952-47EB-B384-496A02275697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2EF0FA-7952-47EB-B384-496A02275697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2EF0FA-7952-47EB-B384-496A02275697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD8C609-1EA6-4C34-8088-538108F3E7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD8C609-1EA6-4C34-8088-538108F3E7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD8C609-1EA6-4C34-8088-538108F3E7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD8C609-1EA6-4C34-8088-538108F3E7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531B2271-8893-4B9B-90D3-1918ABAA7F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531B2271-8893-4B9B-90D3-1918ABAA7F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531B2271-8893-4B9B-90D3-1918ABAA7F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531B2271-8893-4B9B-90D3-1918ABAA7F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B928BC-F290-4C2C-AA4F-7A1681407019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B928BC-F290-4C2C-AA4F-7A1681407019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B928BC-F290-4C2C-AA4F-7A1681407019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B928BC-F290-4C2C-AA4F-7A1681407019}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

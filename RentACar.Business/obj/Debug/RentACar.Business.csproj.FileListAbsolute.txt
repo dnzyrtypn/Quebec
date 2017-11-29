@@ -1,0 +1,16 @@
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Business.dll.config
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Business.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Business.pdb
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Core.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.DataAccess.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Model.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Core.pdb
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.DataAccess.pdb
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\RentACar.Model.pdb
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\obj\Debug\RentACar.Business.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\obj\Debug\RentACar.Business.dll
+C:\Users\Lenovo-Pc\Desktop\Quebec\RentACar.Business\obj\Debug\RentACar.Business.pdb

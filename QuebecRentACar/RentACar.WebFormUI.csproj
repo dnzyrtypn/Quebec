@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6630A772-42EB-479E-928E-77839DB9CAA9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuebecRentACar</RootNamespace>
+    <AssemblyName>QuebecRentACar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Araclar.aspx" />
+    <Content Include="DetaylıAra.aspx" />
+    <Content Include="DetaylıAraAssets\css\bootstrap.css" />
+    <Content Include="DetaylıAraAssets\css\jquery-ui.css" />
+    <Content Include="DetaylıAraAssets\css\style.css" />
+    <Content Include="DetaylıAraAssets\images\arrow.png" />
+    <Content Include="DetaylıAraAssets\images\b.jpg" />
+    <Content Include="DetaylıAraAssets\images\c.jpg" />
+    <Content Include="DetaylıAraAssets\images\date-icon.png" />
+    <Content Include="DetaylıAraAssets\images\terrace.jpg" />
+    <Content Include="DetaylıAraAssets\index.html" />
+    <Content Include="DetaylıAraAssets\js\easing.js" />
+    <Content Include="DetaylıAraAssets\js\jquery-ui.js" />
+    <Content Include="DetaylıAraAssets\js\jquery.flexslider.js" />
+    <Content Include="DetaylıAraAssets\js\jquery.min.js" />
+    <Content Include="DetaylıAraAssets\js\move-top.js" />
+    <Content Include="DetaylıAraAssets\w3layouts-License.txt" />
+    <Content Include="Home.aspx" />
+    <Content Include="KiralaAssets\css\bootstrap.css" />
+    <Content Include="KiralaAssets\css\jquery-ui.css" />
+    <Content Include="KiralaAssets\css\style.css" />
+    <Content Include="KiralaAssets\images\arrow.png" />
+    <Content Include="KiralaAssets\images\date-icon.png" />
+    <Content Include="KiralaAssets\images\kirala.jpg" />
+    <Content Include="KiralaAssets\images\terrace.jpg" />
+    <Content Include="KiralaAssets\index.html" />
+    <Content Include="KiralaAssets\js\easing.js" />
+    <Content Include="KiralaAssets\js\jquery-ui.js" />
+    <Content Include="KiralaAssets\js\jquery.flexslider.js" />
+    <Content Include="KiralaAssets\js\jquery.min.js" />
+    <Content Include="KiralaAssets\js\move-top.js" />
+    <Content Include="KiralaAssets\w3layouts-License.txt" />
+    <Content Include="Kiralama.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginAssets\css\style.css" />
+    <Content Include="LoginAssets\images\bg.jpg" />
+    <Content Include="LoginAssets\index.html" />
+    <Content Include="LoginAssets\w3layouts-License.txt" />
+    <Content Include="MusteriBilgileriAssets\css\style.css" />
+    <Content Include="MusteriBilgileriAssets\images\bgg.jpg" />
+    <Content Include="MusteriBilgileriAssets\index.html" />
+    <Content Include="MusteriBilgileriAssets\js\filedrag.js" />
+    <Content Include="MusteriBilgileriAssets\js\jquery.min.js" />
+    <Content Include="MusteriBilgileriAssets\w3layouts-License.txt" />
+    <Content Include="MüşteriBilgileri.aspx" />
+    <Content Include="OturumAç.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="Template\css\bootstrap.css" />
+    <Content Include="Template\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Template\fonts\fontawesome-webfont.woff" />
+    <Content Include="Template\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Template\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Template\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Template\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Template\fonts\thumbgallery.eot" />
+    <Content Include="Template\fonts\thumbgallery.ttf" />
+    <Content Include="Template\fonts\thumbgallery.woff" />
+    <Content Include="MusteriBilgileriAssets\images\Thumbs.db" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template\css\aos.css" />
+    <Content Include="Template\css\banner.css" />
+    <Content Include="Template\css\bootstrap.min.css" />
+    <Content Include="Template\css\colorfulTab.min.css" />
+    <Content Include="Template\css\font-awesome.min.css" />
+    <Content Include="Template\css\icons.css" />
+    <Content Include="Template\css\info.css" />
+    <Content Include="Template\css\jquery.mb.thumbgallery.min.css" />
+    <Content Include="Template\css\pogo-slider.min.css" />
+    <Content Include="Template\css\simplelightbox.min.css" />
+    <Content Include="Template\css\style.css" />
+    <Content Include="Template\css\typo.css" />
+    <Content Include="Template\css\YouTubePopUp.css" />
+    <Content Include="Template\fonts\svg\close.svg" />
+    <Content Include="Template\fonts\svg\next.svg" />
+    <Content Include="Template\fonts\svg\prev.svg" />
+    <Content Include="Template\fonts\thumbgallery.svg" />
+    <Content Include="Template\images\about-pic1.jpg" />
+    <Content Include="Template\images\about-pic2.jpg" />
+    <Content Include="Template\images\about-pic3.jpg" />
+    <Content Include="Template\images\arrows.png" />
+    <Content Include="Template\images\aus.png" />
+    <Content Include="Template\images\banner1.jpg" />
+    <Content Include="Template\images\banner2.jpg" />
+    <Content Include="Template\images\banner3.jpg" />
+    <Content Include="Template\images\banner4.jpg" />
+    <Content Include="Template\images\banner5.jpg" />
+    <Content Include="Template\images\blogpost-pic1.jpg" />
+    <Content Include="Template\images\blogpost-pic2.jpg" />
+    <Content Include="Template\images\blogpost-pic3.jpg" />
+    <Content Include="Template\images\blogpost.jpg" />
+    <Content Include="Template\images\cd-top-arrow.svg" />
+    <Content Include="Template\images\close.png" />
+    <Content Include="Template\images\drive1.jpg" />
+    <Content Include="Template\images\drive10.jpg" />
+    <Content Include="Template\images\drive11.jpg" />
+    <Content Include="Template\images\drive12.jpg" />
+    <Content Include="Template\images\drive2.jpg" />
+    <Content Include="Template\images\drive3.jpg" />
+    <Content Include="Template\images\drive4.jpg" />
+    <Content Include="Template\images\drive5.jpg" />
+    <Content Include="Template\images\drive6.jpg" />
+    <Content Include="Template\images\drive7.jpg" />
+    <Content Include="Template\images\drive8.jpg" />
+    <Content Include="Template\images\drive9.jpg" />
+    <Content Include="Template\images\dutch.png" />
+    <Content Include="Template\images\eng.png" />
+    <Content Include="Template\images\france.png" />
+    <Content Include="Template\images\gallery1.jpg" />
+    <Content Include="Template\images\gallery2.jpg" />
+    <Content Include="Template\images\gallery3.jpg" />
+    <Content Include="Template\images\gallery4.jpg" />
+    <Content Include="Template\images\gallery5.jpg" />
+    <Content Include="Template\images\gallery6.jpg" />
+    <Content Include="Template\images\gallery7.jpg" />
+    <Content Include="Template\images\gallery8.jpg" />
+    <Content Include="Template\images\gallery9.jpg" />
+    <Content Include="Template\images\ger.png" />
+    <Content Include="Template\images\info-img1-1.jpg" />
+    <Content Include="Template\images\info-img1.jpg" />
+    <Content Include="Template\images\info-img2-2.jpg" />
+    <Content Include="Template\images\info-img2.jpg" />
+    <Content Include="Template\images\info-img3-3.jpg" />
+    <Content Include="Template\images\info-img3.jpg" />
+    <Content Include="Template\images\info-img4-4.jpg" />
+    <Content Include="Template\images\info-img4.jpg" />
+    <Content Include="Template\images\italy.png" />
+    <Content Include="Template\images\lens.png" />
+    <Content Include="Template\images\loader.gif" />
+    <Content Include="Template\images\news1.jpg" />
+    <Content Include="Template\images\news2.jpg" />
+    <Content Include="Template\images\news3.jpg" />
+    <Content Include="Template\images\port.png" />
+    <Content Include="Template\images\post1.jpg" />
+    <Content Include="Template\images\post10.jpg" />
+    <Content Include="Template\images\post11.jpg" />
+    <Content Include="Template\images\post12.jpg" />
+    <Content Include="Template\images\post2.jpg" />
+    <Content Include="Template\images\post3.jpg" />
+    <Content Include="Template\images\post4.jpg" />
+    <Content Include="Template\images\post5.jpg" />
+    <Content Include="Template\images\post6.jpg" />
+    <Content Include="Template\images\post7.jpg" />
+    <Content Include="Template\images\post8.jpg" />
+    <Content Include="Template\images\post9.jpg" />
+    <Content Include="Template\images\recent.jpg" />
+    <Content Include="Template\images\recent1-1.jpg" />
+    <Content Include="Template\images\recent1.jpg" />
+    <Content Include="Template\images\recent2-2.jpg" />
+    <Content Include="Template\images\recent2.jpg" />
+    <Content Include="Template\images\recent3-3.jpg" />
+    <Content Include="Template\images\recent3.jpg" />
+    <Content Include="Template\images\recent4-4.jpg" />
+    <Content Include="Template\images\recent4.jpg" />
+    <Content Include="Template\images\recent5-5.jpg" />
+    <Content Include="Template\images\recent5.jpg" />
+    <Content Include="Template\images\recent6-6.jpg" />
+    <Content Include="Template\images\recent6.jpg" />
+    <Content Include="Template\images\recent7-7.jpg" />
+    <Content Include="Template\images\recent7.jpg" />
+    <Content Include="Template\images\recent8-8.jpg" />
+    <Content Include="Template\images\recent8.jpg" />
+    <Content Include="Template\images\spain.png" />
+    <Content Include="Template\images\special-img.jpg" />
+    <Content Include="Template\images\team-pic1.jpg" />
+    <Content Include="Template\images\team-pic2.jpg" />
+    <Content Include="Template\images\team-pic3.jpg" />
+    <Content Include="Template\images\team-pic4.jpg" />
+    <Content Include="Template\images\team-pic5.jpg" />
+    <Content Include="Template\images\team-pic6.jpg" />
+    <Content Include="Template\images\team-pic7.jpg" />
+    <Content Include="Template\images\team-pic8.jpg" />
+    <Content Include="Template\images\team-pic9.jpg" />
+    <Content Include="Template\images\test-img1.jpg" />
+    <Content Include="Template\images\test-img2.jpg" />
+    <Content Include="Template\images\test-img3.jpg" />
+    <Content Include="Template\images\test-img4.jpg" />
+    <Content Include="Template\images\test-img5.jpg" />
+    <Content Include="Template\images\test-img6.jpg" />
+    <Content Include="Template\images\test.jpg" />
+    <Content Include="Template\images\thai.png" />
+    <Content Include="Template\images\usa.png" />
+    <Content Include="Template\images\videopic1.jpg" />
+    <Content Include="Template\images\videopic2.jpg" />
+    <Content Include="Template\images\videopic3.jpg" />
+    <Content Include="Template\images\videopic4.jpg" />
+    <Content Include="Template\images\videopic5.jpg" />
+    <Content Include="Template\images\videopic6.jpg" />
+    <Content Include="Template\images\videopic7.jpg" />
+    <Content Include="Login.html" />
+    <Content Include="Template\js\aos.js" />
+    <Content Include="Template\js\aos2.js" />
+    <Content Include="Template\js\bootstrap.min.js" />
+    <Content Include="Template\js\colorfulTab.min.js" />
+    <Content Include="Template\js\contact_me.js" />
+    <Content Include="Template\js\index.js" />
+    <Content Include="Template\js\jarallax.js" />
+    <Content Include="Template\js\jqBootstrapValidation.js" />
+    <Content Include="Template\js\jquery.ba-cond.min.js" />
+    <Content Include="Template\js\jquery.hover3d.js" />
+    <Content Include="Template\js\jquery.hoverCarousel.js" />
+    <Content Include="Template\js\jquery.mb.thumbGallery.js" />
+    <Content Include="Template\js\jquery.min.js" />
+    <Content Include="Template\js\jquery.pogo-slider.min.js" />
+    <Content Include="Template\js\jquery.slitslider.js" />
+    <Content Include="Template\js\main.js" />
+    <Content Include="Template\js\modernizr.min.js" />
+    <Content Include="Template\js\ns.hover.min.js" />
+    <Content Include="Template\js\phanimate.jquery.js" />
+    <Content Include="Template\js\responsiveslides.min.js" />
+    <Content Include="Template\js\simple-lightbox.js" />
+    <Content Include="Template\js\SmoothScroll.min.js" />
+    <Content Include="Template\js\top.js" />
+    <Content Include="Template\js\toucheffects.js" />
+    <Content Include="Template\js\YouTubePopUp.jquery.js" />
+    <Content Include="Template\w3layouts-License.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Araclar.aspx.cs">
+      <DependentUpon>Araclar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Araclar.aspx.designer.cs">
+      <DependentUpon>Araclar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetaylıAra.aspx.cs">
+      <DependentUpon>DetaylıAra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetaylıAra.aspx.designer.cs">
+      <DependentUpon>DetaylıAra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiralama.aspx.cs">
+      <DependentUpon>Kiralama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiralama.aspx.designer.cs">
+      <DependentUpon>Kiralama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MüşteriBilgileri.aspx.cs">
+      <DependentUpon>MüşteriBilgileri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MüşteriBilgileri.aspx.designer.cs">
+      <DependentUpon>MüşteriBilgileri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OturumAç.aspx.cs">
+      <DependentUpon>OturumAç.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OturumAç.aspx.designer.cs">
+      <DependentUpon>OturumAç.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RentACar.Business\RentACar.Business.csproj">
+      <Project>{78b928bc-f290-4c2c-aa4f-7a1681407019}</Project>
+      <Name>RentACar.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentACar.Core\RentACar.Core.csproj">
+      <Project>{3a2ef0fa-7952-47eb-b384-496a02275697}</Project>
+      <Name>RentACar.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentACar.DataAccess\RentACar.DataAccess.csproj">
+      <Project>{531b2271-8893-4b9b-90d3-1918abaa7f27}</Project>
+      <Name>RentACar.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentACar.Model\RentACar.Model.csproj">
+      <Project>{dfd8c609-1ea6-4c34-8088-538108f3e7d1}</Project>
+      <Name>RentACar.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EhliyetFotograflari\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51381</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51381/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
